@@ -62,196 +62,39 @@
         <section class="events-carousel-page">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 col-md-3 p-4">
-                        <!--Events One Single Start-->
-                        <div class="events-one__single">
-                            <div class="events-one__img">
-                                <img src="assets/images/events/events-page-1-1.jpg" alt="">
-                                <div class="events-one__date">
-                                    <p>23 May, 2022</p>
+                    <?php
+                    if (!empty($blog)) {
+                        foreach ($blog as $row) { ?>
+                            <div class="col-lg-4 col-sm-6 col-md-3 p-4">
+                                <!--Events One Single Start-->
+                                <div class="events-one__single">
+                                    <div class="events-one__img">
+                                        <img src="<?=  $row['image_type'] ?>" alt="<?=  $row['title'] ?>">
+                                        <div class="events-one__date">
+                                            <p><?=  $row['created'] ?></p>
+                                        </div>
+                                        <div class="events-one__content">
+                                            <ul class="list-unstyled events-one__meta">
+                                                <!-- <li><i class="fas fa-clock"></i>8:00pm<?=  $row[''] ?></li> -->
+                                                <!-- <li><i class="fas fa-map-marker-alt"></i>New York<?=  $row['images'] ?></li> -->
+                                            </ul>
+                                            <h3 class="events-one__title"><a href="event-details.html"><?=  $row['title'] ?></a></h3>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="events-one__content">
-                                    <ul class="list-unstyled events-one__meta">
-                                        <li><i class="fas fa-clock"></i>8:00pm</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>New York</li>
-                                    </ul>
-                                    <h3 class="events-one__title"><a href="event-details.html">Play for the
-                                            world
-                                            with us</a></h3>
-                                </div>
+                                <!--Events One Single End-->
                             </div>
-                        </div>
-                        <!--Events One Single End-->
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-md-3 p-4">
-                        <!--Events One Single Start-->
-                        <div class="events-one__single">
-                            <div class="events-one__img">
-                                <img src="assets/images/events/events-page-1-2.jpg" alt="">
-                                <div class="events-one__date">
-                                    <p>23 May, 2022</p>
-                                </div>
-                                <div class="events-one__content">
-                                    <ul class="list-unstyled events-one__meta">
-                                        <li><i class="fas fa-clock"></i>8:00pm</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>New York</li>
-                                    </ul>
-                                    <h3 class="events-one__title"><a href="event-details.html">Contrary to
-                                            popular belief</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Events One Single End-->
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-md-3 p-4">
-                        <!--Events One Single Start-->
-                        <div class="events-one__single">
-                            <div class="events-one__img">
-                                <img src="assets/images/events/events-page-1-3.jpg" alt="">
-                                <div class="events-one__date">
-                                    <p>23 May, 2022</p>
-                                </div>
-                                <div class="events-one__content">
-                                    <ul class="list-unstyled events-one__meta">
-                                        <li><i class="fas fa-clock"></i>8:00pm</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>New York</li>
-                                    </ul>
-                                    <h3 class="events-one__title"><a href="event-details.html">There are
-                                            many variations of</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Events One Single End-->
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-md-3 p-4">
-                        <!--Events One Single Start-->
-                        <div class="events-one__single">
-                            <div class="events-one__img">
-                                <img src="assets/images/events/events-page-1-4.jpg" alt="">
-                                <div class="events-one__date">
-                                    <p>23 May, 2022</p>
-                                </div>
-                                <div class="events-one__content">
-                                    <ul class="list-unstyled events-one__meta">
-                                        <li><i class="fas fa-clock"></i>8:00pm</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>New York</li>
-                                    </ul>
-                                    <h3 class="events-one__title"><a href="event-details.html">Play for the
-                                            world
-                                            with us</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Events One Single End-->
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-md-3 p-4">
-                        <!--Events One Single Start-->
-                        <div class="events-one__single">
-                            <div class="events-one__img">
-                                <img src="assets/images/events/events-page-1-5.jpg" alt="">
-                                <div class="events-one__date">
-                                    <p>23 May, 2022</p>
-                                </div>
-                                <div class="events-one__content">
-                                    <ul class="list-unstyled events-one__meta">
-                                        <li><i class="fas fa-clock"></i>8:00pm</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>New York</li>
-                                    </ul>
-                                    <h3 class="events-one__title"><a href="event-details.html">Contrary to
-                                            popular belief</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Events One Single End-->
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-md-3 p-4">
-                        <!--Events One Single Start-->
-                        <div class="events-one__single">
-                            <div class="events-one__img">
-                                <img src="assets/images/events/events-page-1-6.jpg" alt="">
-                                <div class="events-one__date">
-                                    <p>23 May, 2022</p>
-                                </div>
-                                <div class="events-one__content">
-                                    <ul class="list-unstyled events-one__meta">
-                                        <li><i class="fas fa-clock"></i>8:00pm</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>New York</li>
-                                    </ul>
-                                    <h3 class="events-one__title"><a href="event-details.html">There are
-                                            many variations of</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Events One Single End-->
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-md-3 p-4">
-                        <!--Events One Single Start-->
-                        <div class="events-one__single">
-                            <div class="events-one__img">
-                                <img src="assets/images/events/events-page-1-1.jpg" alt="">
-                                <div class="events-one__date">
-                                    <p>23 May, 2022</p>
-                                </div>
-                                <div class="events-one__content">
-                                    <ul class="list-unstyled events-one__meta">
-                                        <li><i class="fas fa-clock"></i>8:00pm</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>New York</li>
-                                    </ul>
-                                    <h3 class="events-one__title"><a href="event-details.html">Play for the
-                                            world
-                                            with us</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Events One Single End-->
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-md-3 p-4">
-                        <!--Events One Single Start-->
-                        <div class="events-one__single">
-                            <div class="events-one__img">
-                                <img src="assets/images/events/events-page-1-2.jpg" alt="">
-                                <div class="events-one__date">
-                                    <p>23 May, 2022</p>
-                                </div>
-                                <div class="events-one__content">
-                                    <ul class="list-unstyled events-one__meta">
-                                        <li><i class="fas fa-clock"></i>8:00pm</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>New York</li>
-                                    </ul>
-                                    <h3 class="events-one__title"><a href="event-details.html">Contrary to
-                                            popular belief</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Events One Single End-->
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-md-3 p-4">
-                        <!--Events One Single Start-->
-                        <div class="events-one__single">
-                            <div class="events-one__img">
-                                <img src="assets/images/events/events-page-1-3.jpg" alt="">
-                                <div class="events-one__date">
-                                    <p>23 May, 2022</p>
-                                </div>
-                                <div class="events-one__content">
-                                    <ul class="list-unstyled events-one__meta">
-                                        <li><i class="fas fa-clock"></i>8:00pm</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>New York</li>
-                                    </ul>
-                                    <h3 class="events-one__title"><a href="event-details.html">There are
-                                            many variations of</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Events One Single End-->
-                    </div>
+                            <?php
+                                }
+                            }
+                                    ?>
                 </div>
             </div>
         </section>
         <!--Events Page End-->
 
 
-        
+
         <!--News details End-->
 
 

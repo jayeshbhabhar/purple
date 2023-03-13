@@ -41,18 +41,18 @@
                     <div class="col-xl-8 col-lg-7">
                         <div class="donate-now__left">
                             <div class="donate-now__personal-info-box">
-                                <form class="donate-now__personal-info-form">
+                                <form class="donate-now__personal-info-form" method="post">
                                     <div class="row">
                                         <div class="col-xl-6">
                                             <div class="donate-now__personal-info-input">
                                                 <input type="text" placeholder="First name" name="name">
                                             </div>
                                         </div>
-                                        <div class="col-xl-6">
+                                        <!-- <div class="col-xl-6">
                                             <div class="donate-now__personal-info-input">
                                                 <input type="text" placeholder="Last name" name="last-name">
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="col-xl-6">
                                             <div class="donate-now__personal-info-input">
                                                 <input type="email" placeholder="Email address" name="email">

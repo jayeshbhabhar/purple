@@ -790,7 +790,7 @@
                     <h2 class="section-title__title">Contact with us</h2>
                 </div>
                 <div class="contact-page__form-box">
-                    <form action="" class="contact-page__form contact-form-validated" novalidate="novalidate">
+                    <form action="" class="contact-page__form contact-form-validated" novalidate="novalidate" method="post">
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="contact-form__input-box">
@@ -807,11 +807,11 @@
                                     <input type="text" placeholder="Phone" name="phone">
                                 </div>
                             </div>
-                            <div class="col-xl-6">
+                            <!-- <div class="col-xl-6">
                                 <div class="contact-form__input-box">
                                     <input type="text" placeholder="Subject" name="subject">
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="row">
                             <div class="col-xl-12">

@@ -31,7 +31,7 @@
                 <div class="section-title text-center">
                 </div>
                 <div class="contact-page__form-box">
-                    <form action="" class="contact-page__form contact-form-validated" novalidate="novalidate">
+                    <form action="" class="contact-page__form contact-form-validated" novalidate="novalidate" method="post">
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="contact-form__input-box">
@@ -43,13 +43,13 @@
                             <div class="col-xl-6">
                                 <div class="contact-form__input-box">
                                     <label for="email">Email address</label>
-                                    <input type="email" placeholder="Email address" name="email" id="email">
+                                    <input type="email" placeholder="Email address" name="email_address" id="email">
                                 </div>
                             </div>
                             <div class="col-xl-6">
                                 <div class="contact-form__input-box">
                                     <label for="phone">Phone Number</label>
-                                    <input type="text" placeholder="Phone" name="phone" id="phone">
+                                    <input type="text" placeholder="Phone" name="phone_number" id="phone">
                                 </div>
                             </div>
                             <div class="col-xl-6">
@@ -61,7 +61,7 @@
                             <div class="col-xl-6">
                                 <div class="contact-form__input-box">
                                     <label for="work">Type of work</label>
-                                    <select class="form-select element-2" aria-label="Default select example" id="work">
+                                    <select class="form-select element-2" aria-label="Default select example" name="work_type" id="work">
                                         <option selected>Select type of work</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -70,32 +70,32 @@
                                 </div>
                             </div>
                             <div class="col-xl-6">
-                            <label for="birthday">Date of dirth</label>
+                                <label for="birthday">Date of dirth</label>
                                 <div class="contact-form__input-box  ">
-                                    <input class="element-2 " type="date" id="birthday" name="birthday">
+                                    <input class="element-2 " type="date" id="birthday" name="dob">
                                 </div>
                             </div>
 
                             <div class="col-xl-6">
-                            <label for="Gender">Gender</label>
-                                <div class="contact-form__input-box element-2 element-3" id="gender">
-                                
+                                <label for="Gender">Gender</label>
+                                <div class="contact-form__input-box element-2 element-3" id="gender" >
+
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                          Male
+                                        <input class="form-check-input" type="radio" name="gender" id="" value="male" checked>
+                                        <label class="form-check-label" for="">
+                                            Male
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
-                                        <label class="form-check-label" for="flexRadioDefault2">
-                                         Female
+                                        <input class="form-check-input" type="radio" name="gender" value="female" id="">
+                                        <label class="form-check-label" for="">
+                                            Female
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" >
-                                        <label class="form-check-label" for="flexRadioDefault3">
-                                         Other
+                                        <input class="form-check-input" type="radio" name="gender" value="Other" id="">
+                                        <label class="form-check-label" for="">
+                                            Other
                                         </label>
                                     </div>
 
@@ -105,7 +105,7 @@
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="contact-form__input-box text-message-box">
-                                <label for="birthday">Additional Notes</label>
+                                    <label for="birthday">Additional Notes</label>
                                     <textarea name="message" placeholder="Write a message"></textarea>
                                 </div>
                                 <div class="contact-form__btn-box">
